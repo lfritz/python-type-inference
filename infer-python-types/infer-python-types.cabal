@@ -1,0 +1,23 @@
+Name:                infer-python-types
+Version:             0.1
+Synopsis:            Type inference for Python 3, command-line interface.
+-- Description:         
+License:             BSD3
+License-file:        LICENSE
+Author:              Levin Fritz
+Maintainer:          levin.fritz@gmail.com
+-- Copyright:           
+Category:            Development
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Executable infer-python-types
+  Main-is:             InferPythonTypes.hs
+  Build-depends:       base >= 3,
+                       haskell98,
+                       containers == 0.3.0.0,
+                       deepseq >= 1,
+                       language-python >= 0.3,
+                       python-type-inference >= 0.1
+  Hs-source-dirs:      src
+
